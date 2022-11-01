@@ -12,6 +12,7 @@
         body{
             margin:0px;
             padding:0px;
+            background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 20%, rgba(12, 112, 242, 0) 80%), #303030;
         }
 
         nav{
@@ -54,13 +55,58 @@
                 cursor: pointer;                
             }
 
-        .menu{           
-            width:60%; 
+        .menu{     
+            margin-left:5%;      
+            width:45%; 
             display:flex;
             justify-content: space-around;
             align-items: center;
             
         }
+
+        section{
+            display:flex; 
+            flex-direction: column;                       
+            align-items: center;
+            justify-content: center;
+        }
+
+            header{
+                color:white;
+            }
+
+            header h1{
+                text-align: center;
+                font-family: 'Inter';
+                font-weight: 800;
+                font-size: 80px;                
+                font-weight: bold;
+
+                margin-bottom:20px;
+                padding:0px;
+            }
+
+            header h4{                
+                font-family: 'Inter';
+                text-align: center;
+                font-weight: 500;
+                font-size: 40px;
+
+                padding:0px;
+                margin-bottom:100px;
+            }
+
+            .invert{
+                background-color: #1F1F1F;
+                font-weight: 500;
+                padding:1px;
+                font-weight: bold;
+            }
+
+            form{
+                height:400px;                
+
+            }
 
         
     </style>
@@ -75,11 +121,19 @@
         <button>Login</button>
     </nav>
 
-    <header>
-
-    </header>
-
     <section>
+
+        <header>
+            <h1>BOOTCAMP DNC</h1>
+            <h4>
+                Esse será um evento exclusivo para todos os alunos
+                <br>da <b>DNC</b>, que querem <span class="invert">acelerar a carreira</span> com uma
+                <br>semana intensiva de conteúdo de mercado entre 
+                <br><span class="invert">BACK-END, FRONT-END & BANCO DE DADOS.</span>
+            </h4>
+        </header>
+
+    
         <form>
 
         </form>
