@@ -4,115 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
     <title>Document</title>
-    <style>
-
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap');
-
-        body{
-            margin:0px;
-            padding:0px;
-            background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 20%, rgba(12, 112, 242, 0) 80%), #303030;
-        }
-
-        nav{
-            width:100%;
-            height:100px;
-            background-color: #303030;
-
-            display: flex;
-            padding:0px;
-            margin:0px;
-            align-items: center;
-            justify-content:space-between;
-            border-bottom: 1px solid #BABABA;;
-        }
-
-            nav a{            
-                display:flex;
-                font-family:'Inter';
-                font-weight: 600;
-                font-size: 26px;
-                color:white;
-                text-decoration: none;
-            }
-
-            nav a:hover{
-                color:#c9c9c9;
-            }
-
-            nav button{
-                align-content: flex-end;
-                width:80px;
-                height:40px;
-                background-color: #0C70F2;
-                border:0px;
-                font-family:'Inter';
-                font-weight: 600;
-                color:white;
-                margin-right: 5%;
-                box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
-                cursor: pointer;                
-            }
-
-        .menu{     
-            margin-left:5%;      
-            width:45%; 
-            display:flex;
-            justify-content: space-around;
-            align-items: center;
-            
-        }
-
-        section{
-            display:flex; 
-            flex-direction: column;                       
-            align-items: center;
-            justify-content: center;
-        }
-
-            header{
-                color:white;
-            }
-
-            header h1{
-                text-align: center;
-                font-family: 'Inter';
-                font-weight: 800;
-                font-size: 80px;                
-                font-weight: bold;
-
-                margin-bottom:20px;
-                padding:0px;
-            }
-
-            header h4{                
-                font-family: 'Inter';
-                text-align: center;
-                font-weight: 500;
-                font-size: 40px;
-
-                padding:0px;
-                margin-bottom:100px;
-            }
-
-            .invert{
-                background-color: #1F1F1F;
-                font-weight: 500;
-                padding:1px;
-                font-weight: bold;
-            }
-
-            form{
-                height:400px;                
-
-            }
-
-        
-    </style>
 </head>
 <body>
-    <nav> 
+    <nav class="principal"> 
         <div class="menu">
             <a href="">Home</a>
             <a href="">Ultimas Edições</a>
@@ -132,15 +28,104 @@
                 <br><span class="invert">BACK-END, FRONT-END & BANCO DE DADOS.</span>
             </h4>
         </header>
-
     
         <form>
+            <div class="form-group">
+                <label>Nome:</label>
+                <input type="text" placeholder="Insira seu nome aqui">
+            </div>
+
+            <div class="form-group">
+                <label>Sobrenome:</label>
+                <input type="text" placeholder="Insira seu sobrenome aqui">
+            </div>
+
+            <div class="form-group">
+                <label>Área de Interesse:</label>
+                <div class="checkbox-itens">
+                    <input type="checkbox" value="front"> 
+                    <label>Front-End</label>
+                    
+                    <input type="checkbox" value="back">
+                    <label>Back-End</label>
+
+                    <input type="checkbox" value="bd">
+                    <label>Banco de Dados</label>                    
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Email:</label>
+                <input type="email" placeholder="Insira seu email aqui">
+            </div>
+
+            <div class="form-group">
+                <label>Telefone:</label>
+                <input type="text" placeholder="(99) 99999-9999">
+            </div>
+
+            <div class="form-group">
+                <label>Insira uma frase criativa aqui:</label>
+                <input type="text" placeholder="Qual frase criativa você gostaria de falar? :)">
+            </div>
+
+            <input type="submit" value="Login">
 
         </form>
     </section>
 
+    
     <footer>
 
+        <div class="linha1">
+            <nav>
+                <h5>Escolas</h5>
+                <ul>
+                    <li>
+                        <a href="">Formação em Tecnologia</a>                    
+                    </li>
+                    <li>
+                        <a href="">Formação em Marketing</a>                    
+                    </li>
+                    <li>
+                        <a href="">Formação em Dados</a>                    
+                    </li>
+                    <li>
+                        <a href="">Formação em Projetos</a>                    
+                    </li>
+                    <li>
+                        <a href="">Formação em Produto</a>                    
+                    </li>
+                </ul>
+            </nav>        
+
+            <nav>
+                <h5>Sobre a DNC</h5>
+                <ul>
+                    <li>
+                        <a href="">História</a>                    
+                    </li>
+                    <li>
+                        <a href="">Missão e Valores</a>                    
+                    </li>
+                    <li>
+                        <a href="">Trabalhe Conosco</a>                    
+                    </li>
+                    <li>
+                        <a href="">Conteúdo Gratuito</a>                    
+                    </li>
+                </ul>
+            </nav>   
+
+            <div class="endereco">
+                © 2022 DTC Treinamentos & Consultoria LTDA | CNPJ: 27.995.577/0001-37 | R. Justino Cobra, 61 – Vila Ema | São José dos Campos – SP | CEP 12243-030
+            </div>  
+        </div>
+        <div class="linha2">
+            <a href="">Termos de Uso</a>
+            <a href="">Política de Privacidade</a>
+        </div>
+    
     </footer>
 </body>
 </html>
